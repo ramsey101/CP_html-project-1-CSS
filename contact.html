@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Arena Gaming CI</title>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <h1>🎮 Arena Gaming CI</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            
+            <article>
+                <h3>Contact Information</h3>
+                <address>
+                    <strong>Arena Gaming CI</strong><br>
+                    Rue K23 Cocody<br>
+                    Abidjan, Côte d'Ivoire<br>
+                    <strong>Phone:</strong> <a href="tel:+2250574805303">+225 05 74 80 53 03</a><br>
+                    <strong>Email:</strong> <a href="mailto:koffiemmanuelngou@gmail.com">koffiemmanuelngou@gmail.com</a><br>
+                    
+                </address>
+            </article>
+
+            <!-- General Contact Form -->
+            <article>
+                <h3>Contact Form</h3>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="nom">Full Name* :</label>
+                        <input type="text" id="nom" name="nom" required><br><br>
+                        
+                        <label for="email">Email* :</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        
+                        <label for="telephone">Phone :</label>
+                        <input type="tel" id="telephone" name="telephone"><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Request</legend>
+                        
+                        <label for="sujet">Request type* :</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">-- Choose --</option>
+                            <option value="evenement">Event organization</option>
+                            <option value="location">Accessories rental</option>
+                            <option value="achat">Accessories purchase</option>
+                            <option value="salle">Room reservation</option>
+                            <option value="partenariat">Partnership</option>
+                            <option value="autre">Other</option>
+                        </select><br><br>
+                        
+                        <label for="budget">Approximate budget :</label>
+                        <input type="range" id="budget" name="budget" min="500" max="50000" step="500" value="5000">
+                        <output for="budget">5000€</output><br><br>
+                        
+                        <label for="message">Your message* :</label><br>
+                        <textarea id="message" name="message" rows="5" cols="50" required placeholder="Describe your project or request..."></textarea><br><br>
+                        
+                        <label for="date-evenement">Desired event date :</label>
+                        <input type="date" id="date-evenement" name="date-evenement"><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        
+                        <label>Services you're interested in :</label><br>
+                        <input type="checkbox" id="tournois" name="services[]" value="tournois">
+                        <label for="tournois">Tournament organization</label><br>
+                        
+                        <input type="checkbox" id="location-materiel" name="services[]" value="location">
+                        <label for="location-materiel">Equipment rental</label><br>
+                        
+                        <input type="checkbox" id="salle-gaming" name="services[]" value="salle">
+                        <label for="salle-gaming">Gaming room reservation</label><br>
+                        
+                        <input type="checkbox" id="formation" name="services[]" value="formation">
+                        <label for="formation">Gaming training</label><br><br>
+                        
+                        <label>How did you discover Arena Gaming CI ?</label><br>
+                        <input type="radio" id="bouche-oreille" name="decouverte" value="bouche-oreille">
+                        <label for="bouche-oreille">Word of mouth</label><br>
+                        
+                        <input type="radio" id="internet" name="decouverte" value="internet">
+                        <label for="internet">Internet search</label><br>
+                        
+                        <input type="radio" id="reseaux-sociaux" name="decouverte" value="reseaux">
+                        <label for="reseaux-sociaux">Social networks</label><br>
+                        
+                        <input type="radio" id="evenement" name="decouverte" value="evenement">
+                        <label for="evenement">At an event</label><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Newsletter and Terms</legend>
+                        
+                        <input type="checkbox" id="newsletter" name="newsletter" value="oui">
+                        <label for="newsletter">I want to receive the Arena Gaming CI newsletter</label><br><br>
+                        
+                        <input type="checkbox" id="cgv" name="cgv" required>
+                        <label for="cgv">I accept the <a href="#cgv-section">terms and conditions</a>*</label><br><br>
+                    </fieldset>
+
+                    <button type="submit">Send my request</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </article>
+
+            <!-- Gaming Room Reservation Form -->
+            <article>
+                <h3>Gaming Room Reservation</h3>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Reservation Details</legend>
+                        
+                        <label for="nom-reservation">Name* :</label>
+                        <input type="text" id="nom-reservation" name="nom" required><br><br>
+                        
+                        <label for="email-reservation">Email* :</label>
+                        <input type="email" id="email-reservation" name="email" required><br><br>
+                        
+                        <label for="salle-choisie">Desired room* :</label>
+                        <select id="salle-choisie" name="salle" required>
+                            <option value="">-- Choose a room --</option>
+                            <option value="salle-1">Alpha Room (20 stations)</option>
+                            <option value="salle-2">Beta Room (30 stations)</option>
+                            <option value="salle-3">Gamma Room (30 stations)</option>
+                            <option value="toutes">All rooms (80 stations)</option>
+                        </select><br><br>
+                        
+                        <label for="date-reservation">Date* :</label>
+                        <input type="date" id="date-reservation" name="date" required><br><br>
+                        
+                        <label for="heure-debut">Start time* :</label>
+                        <input type="time" id="heure-debut" name="heure-debut" required><br><br>
+                        
+                        <label for="duree">Duration (hours)* :</label>
+                        <input type="number" id="duree" name="duree" min="1" max="24" required><br><br>
+                        
+                        <label for="participants">Number of participants* :</label>
+                        <input type="number" id="participants" name="participants" min="1" max="80" required><br><br>
+                        
+                        <label for="commentaires">Comments :</label><br>
+                        <textarea id="commentaires" name="commentaires" rows="3" cols="50" placeholder="Specific needs, planned games, etc."></textarea><br><br>
+                    </fieldset>
+
+                    <button type="submit">Book now</button>
+                    <button type="reset">Cancel</button>
+                </form>
+            </article>
+
+            <!-- Opening Hours -->
+            <aside>
+                <h3>Opening Hours</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening</th>
+                            <th>Closing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>9:00 AM</td>
+                            <td>9:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section id="cgv-section">
+            <h3>Legal Information</h3>
+            <details>
+                <summary>Terms and Conditions</summary>
+                <p>
+                    <strong>Article 1 - Scope</strong><br>
+                    These general terms and conditions apply to all services offered 
+                    by Arena Gaming CI, whether event organization, gaming accessories rental or sale, 
+                    or gaming room reservations.
+                </p>
+                <p>
+                    <strong>Article 2 - Reservations</strong><br>
+                    Any reservation must be confirmed with a 30% deposit of the total amount. 
+                    Cancellations must be notified at least 48 hours in advance.
+                </p>
+                <p>
+                    <strong>Article 3 - Liability</strong><br>
+                    Arena Gaming CI commits to providing quality services but cannot be held 
+                    responsible for indirect damages or loss of customers' personal data.
+                </p>
+            </details>
+        </section>
+
+        <nav>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
+                <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
+                <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
+                <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
+                <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <p>
+                <small>
+                    &copy; 2026 Arena Gaming CI. All rights reserved. | 
+                    <a href="mailto:contact@arenagamingci.com">contact@arenagamingci.com</a> | 
+                    Company ID: 123 456 789 00012
+                </small>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
