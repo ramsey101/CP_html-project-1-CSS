@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Arena Gaming CI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header with Navigation -->
     <header>
-        <nav>
-            <h1>Arena Gaming CI</h1>
-            <ul>
+        <nav class="container">
+            <a href="index.html" class="logo">Arena Gaming CI</a>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contact Section -->
-    <main>
-        <section id="contact">
-            <h2>Contact Us</h2>
+    <main class="container">
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Us</h2>
             
-            <article>
-                <h3>Contact Information</h3>
+            <article class="card">
+                <h3 class="section-subtitle">Contact Information</h3>
                 <address>
                     <strong>Arena Gaming CI</strong><br>
                     Rue K23 Cocody<br>
@@ -38,45 +39,59 @@
             </article>
 
             <!-- General Contact Form -->
-            <article>
-                <h3>Contact Form</h3>
+            <article class="form-container">
+                <h3 class="section-subtitle">Contact Form</h3>
                 <form action="#" method="post">
                     <fieldset>
                         <legend>Personal Information</legend>
                         
-                        <label for="nom">Full Name* :</label>
-                        <input type="text" id="nom" name="nom" required><br><br>
+                        <div class="form-group">
+                            <label for="nom">Full Name* :</label>
+                            <input type="text" id="nom" name="nom" class="form-control" required>
+                        </div>
                         
-                        <label for="email">Email* :</label>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <div class="form-group">
+                            <label for="email">Email* :</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
                         
-                        <label for="telephone">Phone :</label>
-                        <input type="tel" id="telephone" name="telephone"><br><br>
+                        <div class="form-group">
+                            <label for="telephone">Phone :</label>
+                            <input type="tel" id="telephone" name="telephone" class="form-control">
+                        </div>
                     </fieldset>
 
                     <fieldset>
                         <legend>Your Request</legend>
                         
-                        <label for="sujet">Request type* :</label>
-                        <select id="sujet" name="sujet" required>
-                            <option value="">-- Choose --</option>
-                            <option value="evenement">Event organization</option>
-                            <option value="location">Accessories rental</option>
-                            <option value="achat">Accessories purchase</option>
-                            <option value="salle">Room reservation</option>
-                            <option value="partenariat">Partnership</option>
-                            <option value="autre">Other</option>
-                        </select><br><br>
+                        <div class="form-group">
+                            <label for="sujet">Request type* :</label>
+                            <select id="sujet" name="sujet" class="form-control" required>
+                                <option value="">-- Choose --</option>
+                                <option value="evenement">Event organization</option>
+                                <option value="location">Accessories rental</option>
+                                <option value="achat">Accessories purchase</option>
+                                <option value="salle">Room reservation</option>
+                                <option value="partenariat">Partnership</option>
+                                <option value="autre">Other</option>
+                            </select>
+                        </div>
                         
-                        <label for="budget">Approximate budget :</label>
-                        <input type="range" id="budget" name="budget" min="500" max="50000" step="500" value="5000">
-                        <output for="budget">5000€</output><br><br>
+                        <div class="form-group">
+                            <label for="budget">Approximate budget :</label>
+                            <input type="range" id="budget" name="budget" min="500" max="50000" step="500" value="5000" class="form-control">
+                            <output for="budget">5000€</output>
+                        </div>
                         
-                        <label for="message">Your message* :</label><br>
-                        <textarea id="message" name="message" rows="5" cols="50" required placeholder="Describe your project or request..."></textarea><br><br>
+                        <div class="form-group">
+                            <label for="message">Your message* :</label>
+                            <textarea id="message" name="message" rows="5" class="form-control" required placeholder="Describe your project or request..."></textarea>
+                        </div>
                         
-                        <label for="date-evenement">Desired event date :</label>
-                        <input type="date" id="date-evenement" name="date-evenement"><br><br>
+                        <div class="form-group">
+                            <label for="date-evenement">Desired event date :</label>
+                            <input type="date" id="date-evenement" name="date-evenement" class="form-control">
+                        </div>
                     </fieldset>
 
                     <fieldset>
@@ -119,58 +134,78 @@
                         <label for="cgv">I accept the <a href="#cgv-section">terms and conditions</a>*</label><br><br>
                     </fieldset>
 
-                    <button type="submit">Send my request</button>
-                    <button type="reset">Reset</button>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Send my request</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
                 </form>
             </article>
 
             <!-- Gaming Room Reservation Form -->
-            <article>
-                <h3>Gaming Room Reservation</h3>
+            <article class="form-container">
+                <h3 class="section-subtitle">Gaming Room Reservation</h3>
                 <form action="#" method="post">
                     <fieldset>
                         <legend>Reservation Details</legend>
                         
-                        <label for="nom-reservation">Name* :</label>
-                        <input type="text" id="nom-reservation" name="nom" required><br><br>
+                        <div class="form-group">
+                            <label for="nom-reservation">Name* :</label>
+                            <input type="text" id="nom-reservation" name="nom" class="form-control" required>
+                        </div>
                         
-                        <label for="email-reservation">Email* :</label>
-                        <input type="email" id="email-reservation" name="email" required><br><br>
+                        <div class="form-group">
+                            <label for="email-reservation">Email* :</label>
+                            <input type="email" id="email-reservation" name="email" class="form-control" required>
+                        </div>
                         
-                        <label for="salle-choisie">Desired room* :</label>
-                        <select id="salle-choisie" name="salle" required>
-                            <option value="">-- Choose a room --</option>
-                            <option value="salle-1">Alpha Room (20 stations)</option>
-                            <option value="salle-2">Beta Room (30 stations)</option>
-                            <option value="salle-3">Gamma Room (30 stations)</option>
-                            <option value="toutes">All rooms (80 stations)</option>
-                        </select><br><br>
+                        <div class="form-group">
+                            <label for="salle-choisie">Desired room* :</label>
+                            <select id="salle-choisie" name="salle" class="form-control" required>
+                                <option value="">-- Choose a room --</option>
+                                <option value="salle-1">Alpha Room (20 stations)</option>
+                                <option value="salle-2">Beta Room (30 stations)</option>
+                                <option value="salle-3">Gamma Room (30 stations)</option>
+                                <option value="toutes">All rooms (80 stations)</option>
+                            </select>
+                        </div>
                         
-                        <label for="date-reservation">Date* :</label>
-                        <input type="date" id="date-reservation" name="date" required><br><br>
+                        <div class="form-group">
+                            <label for="date-reservation">Date* :</label>
+                            <input type="date" id="date-reservation" name="date" class="form-control" required>
+                        </div>
                         
-                        <label for="heure-debut">Start time* :</label>
-                        <input type="time" id="heure-debut" name="heure-debut" required><br><br>
+                        <div class="form-group">
+                            <label for="heure-debut">Start time* :</label>
+                            <input type="time" id="heure-debut" name="heure-debut" class="form-control" required>
+                        </div>
                         
-                        <label for="duree">Duration (hours)* :</label>
-                        <input type="number" id="duree" name="duree" min="1" max="24" required><br><br>
+                        <div class="form-group">
+                            <label for="duree">Duration (hours)* :</label>
+                            <input type="number" id="duree" name="duree" min="1" max="24" class="form-control" required>
+                        </div>
                         
-                        <label for="participants">Number of participants* :</label>
-                        <input type="number" id="participants" name="participants" min="1" max="80" required><br><br>
+                        <div class="form-group">
+                            <label for="participants">Number of participants* :</label>
+                            <input type="number" id="participants" name="participants" min="1" max="80" class="form-control" required>
+                        </div>
                         
-                        <label for="commentaires">Comments :</label><br>
-                        <textarea id="commentaires" name="commentaires" rows="3" cols="50" placeholder="Specific needs, planned games, etc."></textarea><br><br>
+                        <div class="form-group">
+                            <label for="commentaires">Comments :</label>
+                            <textarea id="commentaires" name="commentaires" rows="3" class="form-control" placeholder="Specific needs, planned games, etc."></textarea>
+                        </div>
                     </fieldset>
 
-                    <button type="submit">Book now</button>
-                    <button type="reset">Cancel</button>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Book now</button>
+                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
                 </form>
             </article>
 
             <!-- Opening Hours -->
-            <aside>
-                <h3>Opening Hours</h3>
-                <table border="1">
+            <aside class="card">
+                <h3 class="section-subtitle">Opening Hours</h3>
+                <table class="data-table">
                     <thead>
                         <tr>
                             <th>Day</th>
@@ -267,7 +302,56 @@
             </ul>
         </section>
 
-        <section>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <section id="cgv-section" class="footer-section">
+                <h3>Legal Information</h3>
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    <p>
+                        <strong>Article 1 - Scope</strong><br>
+                        These general terms and conditions apply to all services offered 
+                        by Arena Gaming CI, whether event organization, gaming accessories rental or sale, 
+                        or gaming room reservations.
+                    </p>
+                    <p>
+                        <strong>Article 2 - Reservations</strong><br>
+                        Any reservation must be confirmed with a 30% deposit of the total amount. 
+                        Cancellations must be notified at least 48 hours in advance.
+                    </p>
+                    <p>
+                        <strong>Article 3 - Liability</strong><br>
+                        Arena Gaming CI commits to providing quality services but cannot be held 
+                        responsible for indirect damages or loss of customers' personal data.
+                    </p>
+                </details>
+            </section>
+
+            <nav class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
+                    <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
+                    <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
+                    <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
+                    <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="footer-bottom">
             <p>
                 <small>
                     &copy; 2026 Arena Gaming CI. All rights reserved. | 

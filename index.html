@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arena Gaming CI - Gaming Structure & Event Planning</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header with Navigation -->
     <header>
-        <nav>
-            <h1> Arena Gaming CI</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav class="container">
+            <a href="index.html" class="logo">Arena Gaming CI</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -21,34 +22,39 @@
     </header>
 
     <!-- Home Section -->
-    <main>
-        <section id="home">
-            <h1>Welcome to Arena Gaming CI</h1>
-            <h2>Your trusted gaming partner</h2>
-            <p>
+    <main class="container">
+        <section id="home" class="hero-section">
+            <h1 class="hero-title">Welcome to Arena Gaming CI</h1>
+            <h2 class="hero-subtitle">Your trusted gaming partner</h2>
+            <p class="hero-description">
                 <strong>Arena Gaming CI</strong> is your ultimate destination for everything related to professional gaming. 
                 We specialize in organizing gaming events, selling and renting gaming accessories, 
                 as well as managing gaming rooms where enthusiasts can meet and play.
             </p>
             
             <!-- Presentation video -->
-            <video controls width="400" height="300">
-                <source src="img/bakan.mp4" type="video/mp4">
-                <p>Your browser doesn't support HTML5 videos. <a href="img/bakan.mp4">Download the video</a>.</p>
-            </video>
+            <div class="media-container">
+                <video controls width="400" height="300">
+                    <source src="img/bakan.mp4" type="video/mp4">
+                    <p>Your browser doesn't support HTML5 videos. <a href="img/bakan.mp4">Download the video</a>.</p>
+                </video>
+            </div>
 
             <!-- Gaming ambiance audio -->
-            <audio controls>
-                <source src="gaming-ambiance.mp3" type="audio/mpeg">
-                <p>Your browser doesn't support HTML5 audio.</p>
-            </audio>
+            <div class="media-container">
+                <audio controls>
+                    <source src="gaming-ambiance.mp3" type="audio/mpeg">
+                    <p>Your browser doesn't support HTML5 audio.</p>
+                </audio>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <section id="cgv-section">
-            <h3>Legal Information</h3>
+        <div class="container footer-content">
+            <section id="cgv-section" class="footer-section">
+                <h3>Legal Information</h3>
             <details>
                 <summary>Terms and Conditions</summary>
                 <p>
@@ -67,32 +73,32 @@
                     Arena Gaming CI commits to providing quality services but cannot be held 
                     responsible for indirect damages or loss of customers' personal data.
                 </p>
-            </details>
-        </section>
+            </section>
 
-        <nav>
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
-                <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
-                <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
-                <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
-                <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
-            </ul>
-        </section>
+            <section class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
+                    <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
+                    <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
+                    <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
+                    <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
+                </ul>
+            </section>
+        </div>
 
-        <section>
+        <section class="footer-bottom">
             <p>
                 <small>
                     &copy; 2026 Arena Gaming CI. All rights reserved. | 

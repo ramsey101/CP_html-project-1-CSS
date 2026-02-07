@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Journey - Arena Gaming CI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header with Navigation -->
     <header>
-        <nav>
-            <h1>Arena Gaming CI</h1>
-            <ul>
+        <nav class="container">
+            <a href="index.html" class="logo">Arena Gaming CI</a>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="work.html">Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Resume Section -->
-    <main>
-        <section id="resume">
-            <h2>Our Journey</h2>
+    <main class="container">
+        <section id="resume" class="section">
+            <h2 class="section-title">Our Journey</h2>
             
-            <article>
-                <h3>Company History</h3>
+            <article class="card">
+                <h3 class="section-subtitle">Company History</h3>
                 <dl>
                     <dt><strong>2020</strong></dt>
                     <dd>Creation of Arena Gaming CI with the first gaming room of 20 stations</dd>
@@ -48,9 +49,9 @@
                 </dl>
             </article>
 
-            <article>
-                <h3>Our Certifications</h3>
-                <table border="1">
+            <article class="card">
+                <h3 class="section-subtitle">Our Certifications</h3>
+                <table class="data-table">
                     <thead>
                         <tr>
                             <th>Certification</th>
@@ -82,68 +83,88 @@
                 </table>
             </article>
 
-            <article>
-                <h3>Key Statistics</h3>
-                <ul>
-                    <li><strong>150+</strong> organized events</li>
-                    <li><strong>25,000+</strong> welcomed gamers</li>
-                    <li><strong>500+</strong> accessories sold/rented per month</li>
-                    <li><strong>95%</strong> customer satisfaction</li>
-                    <li><strong>3</strong> equipped gaming rooms</li>
-                    <li><strong>80</strong> available gaming stations</li>
-                </ul>
+            <article class="card">
+                <h3 class="section-subtitle">Key Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">organized events</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25,000+</span>
+                        <span class="stat-label">welcomed gamers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">accessories sold/rented per month</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">customer satisfaction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">equipped gaming rooms</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80</span>
+                        <span class="stat-label">available gaming stations</span>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <section id="cgv-section">
-            <h3>Legal Information</h3>
-            <details>
-                <summary>Terms and Conditions</summary>
-                <p>
-                    <strong>Article 1 - Scope</strong><br>
-                    These general terms and conditions apply to all services offered 
-                    by Arena Gaming CI, whether event organization, gaming accessories rental or sale, 
-                    or gaming room reservations.
-                </p>
-                <p>
-                    <strong>Article 2 - Reservations</strong><br>
-                    Any reservation must be confirmed with a 30% deposit of the total amount. 
-                    Cancellations must be notified at least 48 hours in advance.
-                </p>
-                <p>
-                    <strong>Article 3 - Liability</strong><br>
-                    Arena Gaming CI commits to providing quality services but cannot be held 
-                    responsible for indirect damages or loss of customers' personal data.
-                </p>
-            </details>
-        </section>
+        <div class="container footer-content">
+            <section id="cgv-section" class="footer-section">
+                <h3>Legal Information</h3>
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    <p>
+                        <strong>Article 1 - Scope</strong><br>
+                        These general terms and conditions apply to all services offered 
+                        by Arena Gaming CI, whether event organization, gaming accessories rental or sale, 
+                        or gaming room reservations.
+                    </p>
+                    <p>
+                        <strong>Article 2 - Reservations</strong><br>
+                        Any reservation must be confirmed with a 30% deposit of the total amount. 
+                        Cancellations must be notified at least 48 hours in advance.
+                    </p>
+                    <p>
+                        <strong>Article 3 - Liability</strong><br>
+                        Arena Gaming CI commits to providing quality services but cannot be held 
+                        responsible for indirect damages or loss of customers' personal data.
+                    </p>
+                </details>
+            </section>
 
-        <nav>
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
-                <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
-                <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
-                <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
-                <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
-            </ul>
-        </section>
+            <section class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
+                    <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
+                    <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
+                    <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
+                    <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
+                </ul>
+            </section>
+        </div>
 
-        <section>
+        <section class="footer-bottom">
             <p>
                 <small>
                     &copy; 2026 Arena Gaming CI. All rights reserved. | 

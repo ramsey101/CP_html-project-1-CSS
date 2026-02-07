@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Arena Gaming CI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header with Navigation -->
     <header>
-        <nav>
-            <h1> Arena Gaming CI</h1>
-            <ul>
+        <nav class="container">
+            <a href="index.html" class="logo">Arena Gaming CI</a>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="work.html">Work</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,20 +22,20 @@
     </header>
 
     <!-- About Section -->
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <article>
-                <h3>Our Mission</h3>
+    <main class="container">
+        <section id="about" class="section">
+            <h2 class="section-title">About Us</h2>
+            <article class="card">
+                <h3 class="section-subtitle">Our Mission</h3>
                 <p>
                     At Arena Gaming CI, we believe that gaming brings communities together and creates memorable experiences. 
                     Our mission is to provide a professional and exciting environment for all video game enthusiasts.
                 </p>
             </article>
 
-            <article>
-                <h3>Our Services</h3>
-                <ul>
+            <article class="card">
+                <h3 class="section-subtitle">Our Services</h3>
+                <ul class="feature-list">
                     <li><strong>Gaming event organization:</strong> Tournaments, competitions, gaming nights</li>
                     <li><strong>Gaming accessories sales:</strong> Mechanical keyboards, gaming mice, headsets, monitors</li>
                     <li><strong>Equipment rental:</strong> Professional equipment for events</li>
@@ -42,9 +43,9 @@
                 </ul>
             </article>
 
-            <article>
-                <h3>Our Team</h3>
-                <table border="1">
+            <article class="card">
+                <h3 class="section-subtitle">Our Team</h3>
+                <table class="data-table">
                     <caption>Arena Gaming CI Team</caption>
                     <thead>
                         <tr>
@@ -87,52 +88,54 @@
 
     <!-- Footer -->
     <footer>
-        <section id="cgv-section">
-            <h3>Legal Information</h3>
-            <details>
-                <summary>Terms and Conditions</summary>
-                <p>
-                    <strong>Article 1 - Scope</strong><br>
-                    These general terms and conditions apply to all services offered 
-                    by Arena Gaming CI, whether event organization, gaming accessories rental or sale, 
-                    or gaming room reservations.
-                </p>
-                <p>
-                    <strong>Article 2 - Reservations</strong><br>
-                    Any reservation must be confirmed with a 30% deposit of the total amount. 
-                    Cancellations must be notified at least 48 hours in advance.
-                </p>
-                <p>
-                    <strong>Article 3 - Liability</strong><br>
-                    Arena Gaming CI commits to providing quality services but cannot be held 
-                    responsible for indirect damages or loss of customers' personal data.
-                </p>
-            </details>
-        </section>
+        <div class="container footer-content">
+            <section id="cgv-section" class="footer-section">
+                <h3>Legal Information</h3>
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    <p>
+                        <strong>Article 1 - Scope</strong><br>
+                        These general terms and conditions apply to all services offered 
+                        by Arena Gaming CI, whether event organization, gaming accessories rental or sale, 
+                        or gaming room reservations.
+                    </p>
+                    <p>
+                        <strong>Article 2 - Reservations</strong><br>
+                        Any reservation must be confirmed with a 30% deposit of the total amount. 
+                        Cancellations must be notified at least 48 hours in advance.
+                    </p>
+                    <p>
+                        <strong>Article 3 - Liability</strong><br>
+                        Arena Gaming CI commits to providing quality services but cannot be held 
+                        responsible for indirect damages or loss of customers' personal data.
+                    </p>
+                </details>
+            </section>
 
-        <nav>
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h4>Follow Us</h4>
-            <ul>
-                <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
-                <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
-                <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
-                <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
-                <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
-            </ul>
-        </section>
+            <section class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://facebook.com/arenagaming101">Facebook</a></li>
+                    <li><a href="https://twitter.com/arenagaming101">Twitter</a></li>
+                    <li><a href="https://instagram.com/arenagaming101">Instagram</a></li>
+                    <li><a href="https://youtube.com/arenagaming101">YouTube</a></li>
+                    <li><a href="https://twitch.tv/arenagaming101">Twitch</a></li>
+                </ul>
+            </section>
+        </div>
 
-        <section>
+        <section class="footer-bottom">
             <p>
                 <small>
                     &copy; 2026 Arena Gaming CI. All rights reserved. | 
